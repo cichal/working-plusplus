@@ -92,10 +92,10 @@ const sendHelp = ( event ) => {
 
   const message = (
     'Sure, here\'s what I can do:\n\n' +
-    '• `@Someone :taco:`: Add points to a user or a thing\n' +
+    '• `@Someone` :taco: : Add points to a user or a thing\n' +
     '• `<@' + botUserID + '> leaderboard`: Display the leaderboard\n' +
     '• `<@' + botUserID + '> help`: Display this message\n\n' +
-    'You\'ll need to invite me to a channel before I can recognise commands in it'
+    'You\'ll need to invite me to a channel before I can recognie commands in it'
   );
 
   return slack.sendMessage( message, event.channel );
