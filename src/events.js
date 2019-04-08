@@ -66,8 +66,8 @@ const sayThankyou = ( event ) => {
     'Pleasure!',
     'No thank YOU!',
     (
-      '++ for taking the time to say thanks!\n...' +
-      'just kidding, I can\'t `++` you. But it\'s the thought that counts, right??'
+      ':taco: for taking the time to say thanks!\n...' +
+      'just kidding, I can\'t :taco: you. But it\'s the thought that counts, right??'
     )
   ];
 
@@ -92,14 +92,10 @@ const sendHelp = ( event ) => {
 
   const message = (
     'Sure, here\'s what I can do:\n\n' +
-    '• `@Someone++`: Add points to a user or a thing\n' +
-    '• `@Someone--`: Subtract points from a user or a thing\n' +
+    '• `@Someone :taco:`: Add points to a user or a thing\n' +
     '• `<@' + botUserID + '> leaderboard`: Display the leaderboard\n' +
     '• `<@' + botUserID + '> help`: Display this message\n\n' +
-    'You\'ll need to invite me to a channel before I can recognise ' +
-    '`++` and `--` commands in it.\n\n' +
-    'If you\'re a developer, you can teach me new things! ' +
-    'See <https://github.com/tdmalone/working-plusplus|my GitHub repo> to get started.'
+    'You\'ll need to invite me to a channel before I can recognise commands in it'
   );
 
   return slack.sendMessage( message, event.channel );

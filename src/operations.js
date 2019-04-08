@@ -21,7 +21,7 @@ const getOperationName = ( operation ) => {
 
   /* eslint-disable max-statements-per-line */
   switch ( operation ) {
-    case ':cookie:': operationName = operations.PLUS; break;
+    case :cookie:: operationName = operations.PLUS; break;
     case '-': operationName = operations.MINUS; break;
   }
   /* eslint-enable max-statements-per-line */
