@@ -99,7 +99,7 @@ const handleGet = async( request, response ) => {
 
     // A simple default GET response is sometimes useful for troubleshooting.
     default:
-      response.send( 'It works! However, this app only accepts POST requests for now. This is a test by Alex to confirm Heroku config' );
+      response.send( 'It works! However, this app only accepts POST requests for now. test' );
       break;
 
   }
