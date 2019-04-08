@@ -136,7 +136,7 @@ const getForSlack = async( event, request ) => {
         things = await rankItems( scores, 'things' );
 
   const messageText = (
-    'Here you go. ' +
+    'Arg here you go. ' +
     'Or see the <' + getLeaderboardUrl( request ) + '|whole list>.'
   );
 
@@ -149,11 +149,6 @@ const getForSlack = async( event, request ) => {
           {
             title: 'Users',
             value: users.slice( 0, limit ).join( '\n' ),
-            short: true
-          },
-          {
-            title: 'Things',
-            value: things.slice( 0, limit ).join( '\n' ),
             short: true
           }
         ]
