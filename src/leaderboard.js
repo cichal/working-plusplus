@@ -132,8 +132,7 @@ const getForSlack = async( event, request ) => {
   const limit = 5;
 
   const scores = await points.retrieveTopScores(),
-        users = await rankItems( scores, 'users' ),
-        things = await rankItems( scores, 'things' );
+        users = await rankItems( scores, 'users' );
 
   const messageText = (
     'Arg here you go. ' +
